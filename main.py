@@ -27,7 +27,7 @@ def home():
 @app.get("/info")
 def info():
     return jsonify(
-        version=os.environ.get("APP_VERSION", "v1 - Buildpacks"),
+        version=os.environ.get("APP_VERSION", "v2 - Buildpacks-Testing"),
         hostname=socket.gethostname(),
         port=os.environ.get("PORT", "8080"),
         message="Hello from Cloud Run!",
